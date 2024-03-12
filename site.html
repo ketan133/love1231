@@ -28,7 +28,7 @@
             margin-bottom: 20px;
         }
         .container {
-            max-width: 800px;
+            max-width: 100%;
             margin: 0 auto;
             padding: 20px;
             text-align: center;
@@ -66,6 +66,14 @@
             max-width: 150px;
             height: auto;
         }
+        @media screen and (max-width: 600px) {
+            .graphic {
+                max-width: 100px; /* Adjust size for smaller screens */
+            }
+        }
+        .rotate-90 {
+            transform: rotate(-90deg);
+        }
     </style>
 </head>
 <body>
@@ -81,7 +89,7 @@
         <div class="graphics">
             <img class="graphic" src="Screenshot_20240312_232706_Gallery.jpg" alt="Graphic 1">
             <img class="graphic" src="Screenshot_20240312_232725_Gallery.jpg" alt="Graphic 2">
-            <img class="graphic" src="Screenshot_20240312_232845_Gallery.jpg" alt="Graphic 3">
+            <img class="graphic rotate-90" src="Screenshot_20240312_232845_Gallery.jpg" alt="Graphic 3">
             <img class="graphic" src="Screenshot_20240312_233052_Instagram.jpg" alt="Graphic 4">
             <img class="graphic" src="Screenshot_20240312_233142_Instagram.jpg" alt="Graphic 5">
         </div>
